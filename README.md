@@ -1,0 +1,1 @@
+This repo is created to sync the posts of my static blog
