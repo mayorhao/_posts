@@ -137,19 +137,11 @@ function thunkify(fn){
 ```
 注意：thunkify只允许回调函数执行一次。
 
-### Generator函数的流程管理。 
+### Generator函数的流程管理。. 
 为什么要用Thunk函数，有什么用？以前确实没什么用，但是有了generator之后，就有用了。Thunk现在可以用于Generator函数的自动流程管理。
 比如说，还是读取文件，下面用Generator函数封装了两个异步操作：
 ```javascript
-var fs = require('fs');
-var thunkify = require('thunkify');
-var readFile = thunkify(fs.readFile);
+var 
 
-var gen = function* (){
-  var r1 = yield readFile('/etc/fstab');
-  console.log(r1.toString());
-  var r2 = yield readFile('/etc/shells');
-  console.log(r2.toString());
-};
-```
-未完待续。。。。。。
+
+
